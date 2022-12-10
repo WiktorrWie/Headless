@@ -1,0 +1,23 @@
+<!--section start-->
+<div class="userLogged">
+  <h1>{{userLogged}}</h1>
+</div>
+<section class="login-section section-b-space">
+    <div class="login-form">
+        <h2>Login</h2>
+        <div class="content">
+          <div class="input-field">
+            <input type="text" placeholder="User name" (change)='userName=$event.target.value' [value]="userName">
+          </div>
+          <div class="input-field">
+            <input type="password" placeholder="Password" (change)='password=$event.target.value' [value]="password">
+          </div>
+          <a class="link">Forgot Your Password?</a>
+        </div>
+        <div class="action">
+          <button>Register</button>
+          <button type="button" (click)="this.onSubmit()">Sign in</button>
+        </div>
+    </div>
+</section>
+<!--section end-->

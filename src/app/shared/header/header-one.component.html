@@ -1,0 +1,66 @@
+<header class="sticky" [ngClass]="class" [class.fixed]="stick && sticky">
+  <div class="mobile-fix-option"></div>
+  <div class="top-header" *ngIf="topbar">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="header-contact">
+            <ul>
+              <li>Welcome to Headless online store by Wiktor</li>
+              <li><i class="fa fa-phone" aria-hidden="true"></i>Questions? +45 91 95 38 11</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-6 text-end">
+          <ul class="header-dropdown">
+            <li class="onhover-dropdown mobile-account">
+              <i class="fa fa-user" aria-hidden="true"></i> My Account
+              <ul class="onhover-show-div">
+                <li id="loginButton" *ngIf="!userLogged">
+                  <a [routerLink]="['/shop/login']" data-lng="en">
+                    Login
+                  </a>
+                </li>
+                <li id="mobile-wishlist" class="mobile-wishlist" *ngIf="userLogged">
+                  <a [routerLink]="['/shop/wishlist']"><i class="fa fa-heart" aria-hidden="true"></i>Wishlist</a>
+                </li>
+                <li id="logoutButton" *ngIf="userLogged">
+                  <a [routerLink]="['/shop/logout']" data-lng="es">
+                    Logout
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="main-menu">
+          <div class="menu-left">
+            <div class="brand-logo">
+              <a routerLink="" id="headerlogo">
+                <img [src]="themeLogo" class="img-fluid" alt="logo">
+              </a>
+            </div>
+          </div>
+          <div class="menu-right pull-right">
+            <div>
+              <app-menu></app-menu>
+            </div>
+            <div>
+              <app-settings></app-settings>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- margin top preventing the sticky header from jumping-->
+<div class="top" [class.topmargin]="topmargin"></div>
+

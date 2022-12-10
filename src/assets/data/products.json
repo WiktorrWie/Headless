@@ -1,0 +1,268 @@
+[{
+        "id": 72,
+        "title": "eBIG_TOUR_400",
+        "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
+        "type": "bikes",
+        "brand": "merida",
+        "collection": ["best sellers", "new arrival"],
+        "category": "e-bikes",
+        "price": 350,
+        "sale": true,
+        "discount": "40",
+        "stock": 35,
+        "new": true,
+        "tags": [
+            "black",
+            "blue",
+            "merida"
+        ],
+        "variants": [{
+            "variant_id": 7201,
+            "id": 72,
+            "sku": "sku72",
+            "color": "black",
+            "image_id": 7211
+        },
+        {
+            "variant_id": 6102,
+            "id": 61,
+            "sku": "skumg61",
+            "color": "blue",
+            "image_id": 6112
+        }
+    ],
+        "images": [{
+                "image_id": 7211,
+                "id": 72,
+                "alt": "black",
+                "src": "assets/images/product/eBIG_TOUR_400.jpg",
+                "variant_id": [
+                    7201
+                ]
+            },
+            {
+                "image_id": 6112,
+                "id": 61,
+                "alt": "blue",
+                "src": "assets/images/product/eBIG_TOUR_400.jpg",
+                "variant_id": [
+                    6102
+                ]
+            }
+        ]
+    }, {
+        "id": 73,
+        "title": "eONE-FORTY_500",
+        "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
+        "type": "bikes",
+        "brand": "merida",
+        "collection": ["trending product", "best sellers"],
+        "category": "e-bikes",
+        "price": 180,
+        "sale": true,
+        "discount": "20",
+        "stock": 15,
+        "new": true,
+        "tags": [
+            "yellow",
+            "merida"
+        ],
+        "variants": [{
+                "variant_id": 7301,
+                "id": 73,
+                "sku": "sku73",
+                "color": "yellow",
+                "image_id": 7311
+            }
+        ],
+        "images": [{
+                "image_id": 7311,
+                "id": 73,
+                "alt": "yellow",
+                "src": "assets/images/product/eONE-FORTY_500.jpg",
+                "variant_id": [
+                    7301
+                ]
+            }
+        ]
+    }, {
+        "id": 74,
+        "title": "eONE-FORTY_8000",
+        "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
+        "type": "bikes",
+        "brand": "merida",
+        "collection": ["trending product", "new arrival"],
+        "category": "e-bikes",
+        "price": 140,
+        "sale": false,
+        "discount": "40",
+        "stock": 20,
+        "new": true,
+        "tags": [
+            "new",
+            "black",
+            "merdia"
+        ],
+        "variants": [{
+            "variant_id": 7401,
+            "id": 74,
+            "sku": "sku74",
+            "color": "black",
+            "image_id": 7411
+        }],
+        "images": [{
+            "image_id": 7411,
+            "id": 74,
+            "alt": "black",
+            "src": "assets/images/product/eONE-FORTY_8000.jpg",
+            "variant_id": [
+                7401
+            ]
+        }]
+    }, {
+        "id": 75,
+        "title": "eONE-SIXTY_700",
+        "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
+        "type": "bikes",
+        "brand": "merida",
+        "collection": ["trending product", "best sellers"],
+        "category": "e-bikes",
+        "price": 290,
+        "sale": true,
+        "discount": "15",
+        "stock": 6,
+        "new": true,
+        "tags": [
+            "black",
+            "blue",
+            "merida"
+        ],
+        "variants": [{
+                "variant_id": 7501,
+                "id": 75,
+                "sku": "sku75",
+                "color": "black",
+                "image_id": 7511
+            }
+        ],
+        "images": [{
+                "image_id": 7511,
+                "id": 75,
+                "alt": "black",
+                "src": "assets/images/product/eONE-SIXTY_700.jpg",
+                "variant_id": [
+                    7501
+                ]
+            }
+        ]
+    }, {
+        "id": 76,
+        "title": "ONE-TWENTY",
+        "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
+        "type": "bikes",
+        "brand": "merida",
+        "collection": ["best sellers", "new arrival"],
+        "category": "road bikes",
+        "price": 360,
+        "sale": true,
+        "discount": "56",
+        "stock": 15,
+        "new": true,
+        "tags": [
+            "red",
+            "merida"
+        ],
+        "variants": [
+            {
+                "variant_id": 7602,
+                "id": 76,
+                "sku": "skumg76",
+                "color": "red",
+                "image_id": 7612
+            }
+        ],
+        "images": [
+            {
+                "image_id": 7612,
+                "id": 76,
+                "alt": "red",
+                "src": "assets/images/product/ONE-TWENTY.jpg",
+                "variant_id": [
+                    7602
+                ]
+            }
+        ]
+    }, {
+        "id": 77,
+        "title": "SCULTURA_6000",
+        "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
+        "type": "bikes",
+        "brand": "merida",
+        "collection": ["trending product", "new arrival"],
+        "category": "road bikes",
+        "price": 199,
+        "sale": false,
+        "discount": "40",
+        "stock": 15,
+        "new": true,
+        "tags": [
+            "red",
+            "black",
+            "merida"
+        ],
+        "variants": [{
+                "variant_id": 7701,
+                "id": 77,
+                "sku": "sku77",
+                "color": "red",
+                "image_id": 7711
+            }
+        ],
+        "images": [{
+                "image_id": 7711,
+                "id": 77,
+                "alt": "red",
+                "src": "assets/images/product/SCULTURA_6000.jpg",
+                "variant_id": [
+                    7701
+                ]
+            }
+        ]
+    }, {
+        "id": 78,
+        "title": "SPEEDER_200",
+        "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.",
+        "type": "bikes",
+        "brand": "merida",
+        "collection": ["new arrival"],
+        "category": "road bikes",
+        "price": 260,
+        "sale": false,
+        "discount": "22",
+        "stock": 15,
+        "new": true,
+        "tags": [
+            "new",
+            "black",
+            "merida"
+        ],
+        "variants": [{
+                "variant_id": 7801,
+                "id": 78,
+                "sku": "sku78",
+                "color": "black",
+                "image_id": 7811
+            }
+        ],
+        "images": [{
+                "image_id": 7811,
+                "id": 78,
+                "alt": "black",
+                "src": "assets/images/product/SPEEDER_200.jpg",
+                "variant_id": [
+                    7801
+                ]
+            }
+        ]
+    }
+]

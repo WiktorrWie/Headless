@@ -1,0 +1,6 @@
+{
+    "/": {
+        "target": "http://lookc.staging.dynamicweb-cms.com/",
+        "secure": false
+    }
+}

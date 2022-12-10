@@ -1,0 +1,92 @@
+/* You can add global styles to this file, and also import other style files */
+
+//custom styles
+
+.footer-logo {
+    img {
+        width: 200px;
+    }
+}
+
+.product-image .owl-stage-outer,
+.product-image .img-fluid,
+.product-image-carousel .img-fluid {
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+}
+
+.img-aspect-ratio {
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+}
+
+//jumping header fix
+.top {
+    height: 0px;
+}
+
+.topmargin {
+    height: 167px;
+}
+
+.top {
+    height: 0px;
+}
+
+.topmargin {
+    height: 200px;
+}
+
+.home-big-img {
+    height: 70vh;
+    width: 100vw;
+    object-fit: cover;
+    background-position: center;
+}
+
+.home-big-img-text {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-big-img-text h3 {
+    color: #000;
+    background-color: #fff;
+    padding: 10px;
+    display: inline-block;
+}
+
+.home-big-img-text .title-two {
+    text-align: end;
+}
+
+.title {
+    position: relative;
+    right: 40px;
+    background-color: #fff;
+    padding: 0px 10px;
+}
+
+.button {
+    justify-content: flex-end;
+    display: flex;
+    position: relative;
+    left: 20px;
+}
+
+.text-box {
+    padding: 40px;
+}
+
+.collection-banner .contain-banner h2 {
+    background-color: #fff;
+    padding: 0px 10px;
+}
+
+.category-grid-img{
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}

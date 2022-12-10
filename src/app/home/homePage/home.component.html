@@ -1,0 +1,269 @@
+<app-header-one [sticky]="true" [themeLogo]="themeLogo"></app-header-one>
+
+<!-- Home image start-->
+<section class="p-0">
+      <div class="home-big-img" style="background-image: url('{{bigHomeImg}}');">
+        <div class="home-big-img-text">
+          <div class="text-box">
+            <div class="title-one">
+                <h3>Cutting edge bikes</h3>
+            </div>
+            <div class="title-two">
+                <h3>designed for anything</h3>
+            </div>
+            <div class="title">
+                <h1>{{bigHomeImgTitle}}</h1>
+            </div>
+            <div class="button">
+                <a class="btn btn-solid">
+                   {{bigHomeImgButton}}
+                </a>
+            </div>
+          </div>
+        </div>
+      </div>
+</section>
+<!-- Home image End -->
+
+<!-- collection banner start-->
+<section class="pb-0">
+  <div class="container">
+    <div class="row partition2">
+      <div class="col-md-6">
+        <a [routerLink]="['/shop/collection/left/sidebar']">
+          <div class="collection-banner p-right text-center">
+            <img [src]="collectionBannerImgOne" class="img-fluid" alt="collection-banner">
+            <div class="contain-banner">
+              <div>
+                <h4>{{collectionBannerSubtitleOne}}</h4>
+                <h2>{{collectionBannerNameOne}}</h2>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-6">
+        <a [routerLink]="['/shop/collection/left/sidebar']">
+          <div class="collection-banner p-right text-center">
+            <img [src]="collectionBannerImgTwo" class="img-fluid" alt="collection-banner">
+            <div class="contain-banner">
+              <div>
+                <h4>{{collectionBannerSubtitleTwo}}</h4>
+                <h2>{{collectionBannerNameTwo}}</h2>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- collection banner End -->
+
+<!-- Product Tab start-->
+<section class="section-b-space">
+  <div class="container">
+    <div class="title2">
+        <h4>best in class</h4>
+        <h2 class="title-inner2">trending products</h2>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="theme-tab">
+          <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="tabs tab-title justify-content-center nav nav-pills" >
+            <li *ngFor="let collection of productCollections" [ngbNavItem]="collection">
+              <a ngbNavLink>
+                 {{ collection }}
+              </a>
+              <ng-template ngbNavContent>
+                <div class="no-slider row">
+                    <ng-container *ngFor="let product of getCollectionProducts(collection) | slice:0:4">
+                        <div class="product-box">
+                          <app-product-box-five 
+                          [product]="product" 
+                          [currency]="productService?.Currency"
+                          [thumbnail]="false"
+                          [onHowerChangeImage]="true"
+                          [cartModal]="true">
+                        </app-product-box-five>
+                        </div>
+                    </ng-container>
+                </div>
+              </ng-template>
+            </li>
+          </ul>
+        <div [ngbNavOutlet]="nav" class="mt-2"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Product Tab end-->
+
+<!-- brands  -->
+<div class="container category-button">
+  <section class="section-b-space border-section border-bottom-0">
+    <div class="row partition1">
+      <div class="col" *ngFor="let brand of brandsArr">
+        <a [routerLink]="['/shop/collection/left/sidebar']" 
+           [queryParams]="{ category: 'bags'}"
+           class="btn btn-outline btn-block">
+           {{brand}}
+        </a>
+      </div>
+    </div>
+  </section>
+</div>
+<!-- category end -->
+
+<!-- Parallax banner start-->
+<section class="p-0">
+  <div class="full-banner banner-layout-3 parallax text-center p-center"
+  style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('{{paralaxImg}}');">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="banner-contain">
+            <h4 class="color pt-0">{{paralaxSubtitle}}</h4>
+            <h3>{{paralaxTitle}}</h3>
+            <h4>up to 20% off</h4> 
+            <a [routerLink]="['/shop/collection/left/sidebar']"
+               [queryParams]="{ category: 'bags'}" class="btn btn-solid">
+               {{paralaxButton}}
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Parallax banner End -->
+
+<!-- product slider-->
+<section class="section-b-space">
+  <div class="container">
+      <div class="row partition3 partition_3">
+          <div class="col-lg-4">
+            <div class="theme-card card-border">
+              <app-product-box-vertical-slider 
+                [title]="'New product'"
+                [type]="'bikes'">    
+              </app-product-box-vertical-slider>
+            </div>
+          </div>
+          <div class="col-lg-4 center-slider border-0">
+            <div>
+                <div class="title2">
+                    <h4>on sale</h4>
+                    <h2 class="title-inner2">season sale</h2>
+                </div>
+                <owl-carousel-o class="offer-slider slide-1" [options]="ProductSliderOneConfig">
+                  <ng-container *ngFor="let product of products | slice:0:8">
+                    <ng-template carouselSlide>
+                      <div>
+                        <div class="product-box product-wrap">
+                          <app-product-box-five 
+                            [product]="product" 
+                            [currency]="productService?.Currency"
+                            [thumbnail]="false"
+                            [onHowerChangeImage]="false"
+                            [cartModal]="true">
+                          </app-product-box-five>
+                        </div>
+                      </div>
+                    </ng-template>
+                  </ng-container>
+                </owl-carousel-o>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="theme-card card-border">
+              <app-product-box-vertical-slider 
+                [title]="'Feature product'"
+                [type]="'bikes'">    
+              </app-product-box-vertical-slider>
+            </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+<!-- category grid -->
+<div class="category-bg">
+    <div class="container-fluid p-0">
+        <div class="row order-section">
+            <div class="col-sm-4 p-0">
+                <a [routerLink]="['/shop/collection/left/sidebar']" 
+                   [queryParams]="{ category: 'bags'}"
+                   class="image-block">
+                    <img src="{{categoryGridImageOne}}" class="img-fluid category-grid-img" alt="">
+                </a>
+            </div>
+            <div class="col-sm-4 p-0">
+                <div class="contain-block even">
+                    <div>
+                        <h6>{{categoryGridSubtitleOne}}</h6>
+                        <a [routerLink]="['/shop/collection/left/sidebar']" 
+                           [queryParams]="{ category: 'e-bikes'}">
+                            <h2>{{categoryGridTitleOne}}</h2>
+                        </a>
+                        <a [routerLink]="['/shop/collection/left/sidebar']"
+                           [queryParams]="{ category: 'e-bikes'}"
+                           class="btn btn-solid category-btn">
+                          {{categoryGridButtonOne}}
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 p-0">
+                <a [routerLink]="['/shop/collection/left/sidebar']"
+                   [queryParams]="{ category: 'bags'}"
+                   class="image-block">
+                    <img src="{{categoryGridImageTwo}}" class="img-fluid category-grid-img" alt="" >
+                </a>
+            </div>
+            <div class="col-sm-4 p-0">
+                <div class="contain-block">
+                    <div>
+                        <h6>{{categoryGridSubtitleTwo}}</h6>
+                        <a [routerLink]="['/shop/collection/left/sidebar']"
+                           [queryParams]="{ category: 'bags'}">
+                            <h2>{{categoryGridTitleTwo}}</h2>
+                        </a> 
+                        <a [routerLink]="['/shop/collection/left/sidebar']"
+                           [queryParams]="{ category: 'bags'}" 
+                           class="btn btn-solid category-btn">
+                           {{categoryGridButtonTwo}}
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 p-0">
+                <a [routerLink]="['/shop/collection/left/sidebar']"
+                   [queryParams]="{ category: 'bags'}" 
+                   class="image-block even">
+                    <img src="{{categoryGridImageThree}}" class="img-fluid category-grid-img" alt="">
+                </a>
+            </div>
+            <div class="col-sm-4 p-0">
+                <div class="contain-block">
+                    <div>
+                        <h6>{{categoryGridSubtitleThree}}</h6>
+                        <a [routerLink]="['/shop/collection/left/sidebar']"
+                           [queryParams]="{ category: 'bags'}">
+                            <h2>{{categoryGridTitleThree}}</h2>
+                        </a> 
+                        <a [routerLink]="['/shop/collection/left/sidebar']"
+                           [queryParams]="{ category: 'bags'}"
+                            class="btn btn-solid category-btn">
+                            {{categoryGridButtonThree}}
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-footer-one [footerLogo]="footerLogo"></app-footer-one>
